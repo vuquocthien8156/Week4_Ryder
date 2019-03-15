@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#c1d6d6d6">
+    <TextView
+            android:id="@+id/txtNameResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="aaaaaaaa"
+            android:paddingStart="5dp"
+            />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerTaxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameResult"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"/>
+
+    <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5555555"
+            android:layout_toStartOf="@id/ibtnToAll"
+            android:layout_marginEnd="5dp"
+            android:gravity="end"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/recyclerTaxi"
+            android:layout_alignParentStart="true"/>
+
+    <ImageButton
+            android:id="@+id/ibtnToAll"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_below="@id/recyclerTaxi"
+            android:src="@drawable/ic_to_all"
+            android:layout_alignParentEnd="true"
+/>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "852902059460",
+    "firebase_url": "https://week4-efa24.firebaseio.com",
+    "project_id": "week4-efa24",
+    "storage_bucket": "week4-efa24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852902059460:android:47975d25d987447b",
+        "android_client_info": {
+          "package_name": "com.example.qthien.besttrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852902059460-7l3gh43hu1dvh6jgpkin6q2pptsempfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.qthien.besttrip",
+            "certificate_hash": "cd1def7df859cfe1e1a4bba10f944d42fc43ccb0"
+          }
+        },
+        {
+          "client_id": "852902059460-c3i6h4ihbt8fa4saaseeqapsq3q9scra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_6va09YaCrRMr3x3iOZwSNsWjryds1Uk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852902059460-c3i6h4ihbt8fa4saaseeqapsq3q9scra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

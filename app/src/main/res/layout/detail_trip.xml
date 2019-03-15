@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="#3cffffff"
+            android:paddingTop="150dp">
+        <LinearLayout
+                android:id="@+id/linearTripInfo"
+                android:shadowColor="#8b8b8b"
+                android:shadowRadius="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Trip info"
+                      android:layout_marginTop="10dp"
+                      android:textSize="20sp"
+                      android:textColor="#000"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:padding="15dp"
+                          android:background="@drawable/shape_edt_linear">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/txtKm"
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:textSize="18dp"
+                            android:textColor="#000"
+                            android:text="5km"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="VNĐ"
+                            android:paddingEnd="5dp"
+                            android:textStyle="bold|italic"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:gravity="end|bottom"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="top">
+                    <TextView
+                            android:id="@+id/txtTime"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:textColor="#7e7e7e"
+                            android:layout_height="match_parent"
+                            android:textSize="12dp"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="5dp"
+                            android:drawablePadding="5dp"
+                            android:text="12p"/>
+                    <TextView
+                            android:id="@+id/txtGiaSum"
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:gravity="top|end"
+                            android:text="100.000"
+                            android:paddingEnd="5dp"
+                            android:textColor="#000"
+                            android:textSize="18dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:shadowColor="#8b8b8b"
+                android:shadowRadius="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Fee Breakdown"
+                      android:layout_marginTop="10dp"
+                      android:textSize="20sp"
+                      android:textColor="#000"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:padding="15dp"
+                          android:background="@drawable/shape_edt_linear">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:textSize="18dp"
+                            android:textColor="#000"
+                            android:text="First 4km"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="VNĐ"
+                            android:paddingEnd="5dp"
+                            android:textStyle="bold|italic"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:gravity="end|bottom"/>
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="top|end"
+                        android:text="100.000"
+                        android:paddingEnd="5dp"
+                        android:textColor="#000"
+                        android:id="@+id/txtPrice1"
+                        android:textSize="18dp"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:padding="15dp"
+                          android:background="@drawable/shape_edt_linear">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:textSize="18dp"
+                            android:textColor="#000"
+                            android:text="Every 4km there after"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="VNĐ"
+                            android:paddingEnd="5dp"
+                            android:textStyle="bold|italic"
+                            android:textSize="14dp"
+                            android:textColor="#000"
+                            android:gravity="end|bottom"/>
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="top|end"
+                        android:text="100.000"
+                        android:paddingEnd="5dp"
+                        android:textColor="#000"
+                        android:id="@+id/txtPrice2"
+                        android:textSize="18dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:shadowColor="#8b8b8b"
+                android:shadowRadius="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="About"
+                      android:layout_marginTop="10dp"
+                      android:textSize="20sp"
+                      android:textColor="#000"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="15dp"
+                          android:background="@drawable/shape_edt_linear"
+                          android:orientation="vertical">
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:id="@+id/imgAbout"
+                           android:src="@mipmap/ic_launcher_round"/>
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:text="aaaaaaaaaaaaaaaaaaaa"
+                          android:id="@+id/txtDeripAbout"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+    <RelativeLayout
+                android:id="@+id/r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="10dp"
+                >
+            <EditText
+                    android:id="@+id/edtSearchTaxi"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edt_search"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:hint="Search Taxi"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:textColorHint="#85ffffff"
+                    android:textColor="#fff"
+                    />
+        <ImageButton
+                android:id="@+id/ibtnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/edtSearchTaxi"
+                android:src="@drawable/ic_search"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylerTaxi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp">
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+                android:id="@+id/txtNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Không có"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:gravity="center"/>
+    </FrameLayout>
+
+
+</LinearLayout>

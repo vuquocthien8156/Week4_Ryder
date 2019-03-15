@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_call"
+          android:title="Call"
+          android:icon="@drawable/ic_phone_menu"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/menu_map"
+          android:title="Map"
+          android:icon="@drawable/ic_map_off"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/menu_searchTaxi"
+          android:title="Search Taxi"
+          android:icon="@drawable/ic_search_white"
+          app:showAsAction="always"/>
+</menu>
