@@ -10,6 +10,6 @@ interface GetDataAPI {
     @GET("json?key=AIzaSyCe39vZ4iTF1nrvpmo6g1hQwsw9sa2G6to")
     fun getPlace(@QueryMap Params : Map<String , String>) : Call<Result>
 
-    @GET("json?key=AIzaSyDKdD855kivloeO1yk-ok4UeUgb3_OuIx6U")
+    @GET("json?key=AIzaSyC5ePZCEbKM_8VwKCG_lhSKzKsFRuEuOM0")
     fun getDirection(@QueryMap Params : Map<String , String>) : Call<Direction>
 }

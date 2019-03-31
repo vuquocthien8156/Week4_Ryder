@@ -46,7 +46,7 @@ import java.util.jar.Manifest
 
 class MainActivity : AppCompatActivity() , IFragLogin , IListenerFragmentToMain ,OnMapReadyCallback ,IMapMain ,NavigationView.OnNavigationItemSelectedListener {
 
-    private lateinit var mMap: GoogleMap
+    private var mMap: GoogleMap? = null
 
     private var tagLogin_Register = "login_register"
     private var tagMain = "main"
@@ -323,8 +323,8 @@ class MainActivity : AppCompatActivity() , IFragLogin , IListenerFragmentToMain 
         val place1 = MarkerOptions().position(from).title("From")
         val place2 = MarkerOptions().position(to).title("To")
 
-        mMap.addMarker(place1)
-        mMap.addMarker(place2)
+        mMap?.addMarker(place1)
+        mMap?.addMarker(place2)
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
 //        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney , 13.toFloat()))
         val cameraPosition = CameraPosition.Builder()
@@ -336,10 +336,10 @@ class MainActivity : AppCompatActivity() , IFragLogin , IListenerFragmentToMain 
             .tilt(70f)                   // Sets the tilt of the camera to 30 degrees
             .build()                   // Creates a CameraPosition from the builder
 
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
+        mMap?.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
 
 //                mMap.isMyLocationEnabled = true
-        mMap.uiSettings.isMyLocationButtonEnabled = true
+        mMap?.uiSettings?.isMyLocationButtonEnabled = true
 
         Log.d("Vaoooooo" , "Vào khoongg ?")
     }
@@ -354,7 +354,7 @@ class MainActivity : AppCompatActivity() , IFragLogin , IListenerFragmentToMain 
             po.width(8f)
             po.color(Color.parseColor("#1e9793"))
 
-            mMap.addPolyline(po)
+            mMap?.addPolyline(po)
         }
 //        val polyLineOptions = PolylineOptions()
 //        Log.d("Sizee" , arrResult.size.toString())
